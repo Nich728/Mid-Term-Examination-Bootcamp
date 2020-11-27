@@ -112,12 +112,7 @@ void pushTail (Patient p) {
 
 void pushMid(Patient p){
     Node *temp = createNode(p);
-
-    curr = head;
-    while (curr) {
-        printf("%s %s -> ", temp->patient.DOB, temp->patient.name);
-        curr = curr->next;
-    }
+    
     puts("");
     if (!head) {
         head = tail = temp;
